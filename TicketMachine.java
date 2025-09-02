@@ -1,3 +1,4 @@
+
 /**
  * TicketMachine models a ticket machine that issues
  * flat-fare tickets.
@@ -50,12 +51,13 @@ public class TicketMachine
      */
     public void insertMoney(int amount)
     {
-        if(amount >= 0) {
-            balance = balance + amount;
-        }
-        else {
-            System.out.println("Use a positive amount rather than: " + amount);
-        }
+       if (amount >= 0) {
+    System.out.println("Use a positive amount rather than: " + amount);
+
+    }   
+    else {
+    balance = balance + amount;
+    }
     }
 
     /**
