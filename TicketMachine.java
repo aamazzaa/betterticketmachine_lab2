@@ -75,27 +75,30 @@ public class TicketMachine
      * reduce the current balance by the ticket price. Print
      * an error message if more money is required.
      */
-    public void printTicket()
-    {
-    int amountLeftToPay = price - balance;
+    public void printTicket(){
+    int currentPrice = discountApplied ? price / 2 : price;
+    int amountLeftToPay = currentPrice - balance;
 
     if(amountLeftToPay <= 0) {
-        // Simulate the printing of a ticket.
         System.out.println("##################");
         System.out.println("# The BlueJ Line");
         System.out.println("# Ticket");
-        System.out.println("# " + price + " cents.");
+        System.out.println("# " + currentPrice + " cents.");
         System.out.println("##################");
         System.out.println();
 
-        total = total + price;
-        balance = balance - price;
+        total = total + currentPrice;
+        balance = balance - currentPrice;
+
+        // Reset discount after one use
+        discountApplied = false;
     }
     else {
         System.out.printf("You must insert at least %d more cents.%n", amountLeftToPay);
     }
-    }
 
+
+    }
     public int emptyMachine()
     {
     int prevTotal = total;
@@ -117,5 +120,6 @@ public class TicketMachine
     {
     discountApplied = true;
     }
-
 }
+
+
