@@ -13,3 +13,9 @@ It is discussed in chapter 2.
 Purpose of project: To illustrate conditional statements.
 How to start this project: Create one or more TicketMachine objects.
 
+
+47. Prediction: Calling the method with 0 will cause an error as the other methods become useless when the price for a ticket is 0.
+Actual: Method went through 
+
+48: Same prediction as 47
+Actual: same result as 47.
