@@ -19,3 +19,11 @@ Actual: Method went through
 
 48: Same prediction as 47
 Actual: same result as 47.
+
+50. I believe it was the draw method if it was true it would draw the picture.
+
+51.There is an else statement to calculate how much money is missing as before it accepted any value
+
+52. It functions as before stated in 51.
+
+53.
