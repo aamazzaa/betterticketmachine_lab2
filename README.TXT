@@ -27,3 +27,8 @@ Actual: same result as 47.
 52. It functions as before stated in 51.
 
 53.
+
+54. % and * or / 
+
+saving = price * discount
+mean = total % count

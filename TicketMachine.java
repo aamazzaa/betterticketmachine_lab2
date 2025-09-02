@@ -18,6 +18,7 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    private int prints;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -59,7 +60,16 @@ public class TicketMachine
     balance = balance + amount;
     }
     }
-
+    public void affordable(int budget){
+        prints = balance % price;
+        budget = price % prints;
+        if (budget > price) {
+        System.out.println("This ticket is affordable");    
+        }
+        else {
+        System.out.println("This ticket isn't affordable");     
+        }
+    }
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
