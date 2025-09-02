@@ -32,3 +32,7 @@ Actual: same result as 47.
 
 saving = price * discount
 mean = total % count
+60: Because that only resets the balance and returns it doesnt store it anywhere.
+
+61: because you are using the integer term in the local method it doesn't use the public value of price throughout the method.
+
